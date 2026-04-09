@@ -66,6 +66,6 @@ Se recomienda no avanzar a etapas técnicas hasta contar con requerimientos form
 ## Responsable Técnico
 
 Líder Técnico:
-[Tu nombre]
+[Emanuel Simon Zepeda]
 
 Fecha de actualización: 2026-04-09
