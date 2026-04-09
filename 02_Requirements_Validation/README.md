@@ -27,3 +27,29 @@ Validar que los requerimientos sean claros, completos y técnicamente viables an
 ## Regla Clave
 
 Un requerimiento mal definido genera retrabajo; esta fase es obligatoria
+
+# Requirements Validation
+
+## Objetivo
+Asegurar que los requerimientos estén completos, claros y listos para análisis técnico.
+
+## Subcarpetas
+
+### Gathering/
+Levantamiento de requerimientos.
+- FRM_Requirements_Gathering.docx
+
+### Business_Rules/
+Reglas de negocio aplicables.
+- Business_Rules_Catalog.md
+
+### Acceptance_Criteria/
+Criterios de aceptación.
+- Acceptance_Criteria_Catalog.md
+
+### Validation_Checklists/
+Checklist de validación de requerimientos.
+- Requirements_Validation_Checklist.md
+
+## Regla
+No se permite avanzar con requerimientos ambiguos.

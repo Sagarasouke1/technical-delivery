@@ -26,3 +26,27 @@ Formalizar el cierre del desarrollo.
 ## Regla Clave
 
 Un desarrollo no está terminado hasta que está formalmente cerrado
+
+# Closure
+
+## Objetivo
+Formalizar el cierre del desarrollo.
+
+## Subcarpetas
+
+### Delivery/
+Entrega final.
+
+### Closure_Report/
+Reporte de cierre.
+- Project_Closure_Report.docx
+
+### Lessons_Learned/
+Lecciones aprendidas.
+
+### Sign_Off/
+Firmas finales.
+- Final_Sign_Off.docx
+
+## Regla
+Un desarrollo no está terminado hasta su cierre formal.

@@ -26,3 +26,28 @@ Controlar la liberación a producción.
 ## Regla Clave
 
 Liberar sin control es un riesgo operativo
+
+# Release Management
+
+## Objetivo
+Controlar la liberación a producción.
+
+## Subcarpetas
+
+### Release_Notes/
+Notas de liberación.
+- REL_Release_Notes.docx
+
+### Deployment/
+Checklist de despliegue.
+- Deployment_Checklist.xlsx
+
+### Rollback/
+Plan de reversa.
+- Rollback_Plan.docx
+
+### Validation/
+Validación post-producción.
+
+## Regla
+Toda liberación debe estar documentada y validada.

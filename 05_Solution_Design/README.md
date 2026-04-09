@@ -29,3 +29,32 @@ Definir la arquitectura y diseño técnico de la solución.
 ## Regla Clave
 
 El diseño guía el desarrollo, no al revés
+
+# Solution Design
+
+## Objetivo
+Definir cómo se implementará técnicamente la solución.
+
+## Subcarpetas
+
+### HU-XXX/
+Diseño específico por historia.
+
+### Architecture/
+Diseño de arquitectura.
+- Architecture_Design.md
+
+### Data_Model/
+Modelo de datos.
+- Data_Model_Design.md
+
+### APIs/
+Especificación de APIs.
+- API_Specification.yaml
+
+### Flows/
+Flujos de proceso.
+- Process_Flows.md
+
+## Regla
+El diseño debe basarse en el análisis técnico.

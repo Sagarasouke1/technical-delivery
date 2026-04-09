@@ -28,3 +28,29 @@ Gestionar la ejecución técnica del desarrollo.
 ## Regla Clave
 
 Todo desarrollo debe ser trazable y medible
+
+# Sprint Execution
+
+## Objetivo
+Controlar la ejecución del desarrollo.
+
+## Subcarpetas
+
+### Sprint_Backlog/
+Backlog del sprint.
+- Sprint_Backlog.xlsx
+
+### Tasks/
+Desglose de tareas.
+- TSK_Task_Breakdown.xlsx
+
+### Logs/
+Bitácora de desarrollo.
+- DEV_Development_Log.md
+
+### Strategy/
+Estrategia técnica.
+- IMP_Implementation_Strategy.docx
+
+## Regla
+Todo desarrollo debe tener seguimiento documentado.

@@ -23,3 +23,30 @@ Estructurar los requerimientos en unidades de trabajo claras y trazables.
 ## Regla Clave
 
 No existe desarrollo sin historia de usuario definida
+
+# User Stories
+
+## Objetivo
+Gestionar y validar historias de usuario antes del análisis técnico.
+
+## Subcarpetas
+
+### Backlog/
+Control central de historias.
+- USR_User_Story_Backlog.xlsx
+
+### Templates/
+Plantillas de historias.
+- USR_User_Story_Template.docx
+
+### Draft/
+Historias sin validar.
+
+### Validated/
+Historias aprobadas para análisis técnico.
+
+### Rejected/
+Historias rechazadas por falta de información.
+
+## Regla
+Solo las historias en "Validated" pueden avanzar a análisis técnico.

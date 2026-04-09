@@ -24,3 +24,23 @@ Respaldar técnicamente lo que se desarrolló.
 ## Regla Clave
 
 Si no hay evidencia, no existe el desarrollo
+
+# Development Evidence
+
+## Objetivo
+Respaldar técnicamente lo desarrollado.
+
+## Subcarpetas
+
+### Evidence/
+Evidencia funcional y técnica.
+
+### Logs/
+Logs de ejecución.
+
+### Versions/
+Control de versiones.
+- Version_Control_Register.md
+
+## Regla
+Si no hay evidencia, el desarrollo no es válido.

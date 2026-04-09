@@ -28,3 +28,31 @@ Validar que la solución cumple con lo esperado.
 ## Regla Clave
 
 Nada se libera sin pruebas completas
+
+# Testing and Validation
+
+## Objetivo
+Validar que la solución cumple con los requerimientos.
+
+## Subcarpetas
+
+### Test_Plan/
+Plan de pruebas.
+
+### Test_Cases/
+Casos de prueba.
+- TST_Test_Cases.xlsx
+
+### Evidence/
+Evidencia de pruebas.
+
+### Defects/
+Registro de errores.
+- Defect_Log.xlsx
+
+### UAT/
+Validación final.
+- UAT_User_Acceptance_Record.docx
+
+## Regla
+No se permite liberar sin pruebas documentadas.
