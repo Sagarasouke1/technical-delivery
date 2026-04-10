@@ -1,95 +1,107 @@
-# 📊 Project Status — SCP_Casetas
+# Project Status - SCP_Casetas
 
-## 🧠 Proyecto
-Sistema de Validación de Casetas
-
-## 📅 Fecha de inicio
-18/03/2026
-
----
-
-## 🚦 Estado General
-🟡 En Fase de Análisis / Diseño Inicial
+## Información General
+**Proyecto:** SCP_Casetas  
+**Nombre formal:** Sistema de Gestión y Validación de Casetas  
+**Área solicitante:** Negocio / Liquidaciones / Operaciones  
+**Áreas impactadas:** Liquidaciones / TI  
+**Product Owner:** Oswaldo Ortiz  
+**Metodología:** Scrum  
+**Estado actual:** En fase de análisis y definición funcional
 
 ---
 
-## 📌 Avances
-
-### 📅 18/03/2026
-- **(Hecho)**: Se realiza levantamiento inicial con área de negocio (HU-001 Negocio).
-- **(Hecho)**: Definición de problemática actual del proceso manual.
-- **(Hecho)**: Identificación de impacto en áreas (Liquidaciones / TI).
+## Resumen Ejecutivo del Estado
+El proyecto cuenta con base documental inicial suficiente para avanzar a análisis técnico y diseño de solución. Actualmente ya se dispone de historias de usuario de negocio y operación, así como del levantamiento formal de requerimientos funcionales, no funcionales, interfaces, reglas de negocio, riesgos y dependencias.
 
 ---
 
-### 📅 19/03/2026
-- **(Hecho)**: Se documenta HU-002 Operativo con enfoque en liquidaciones.
-- **(Hecho)**: Se genera Levantamiento de Requerimientos LR-001.
-- **(Hecho)**: Se define alcance funcional y no funcional del sistema.
-- **(Hecho)**: Identificación de usuarios, módulos y reglas de negocio.
+## Avances Registrados
+
+### 18/03/2026
+**(Hecho):**
+- Se documenta la Historia de Usuario de Negocio HU-001.
+- Se define la problemática del proceso actual de validación de casetas.
+- Se documenta la necesidad de automatizar la importación, validación y trazabilidad del proceso.
+- Se identifican áreas impactadas: Liquidaciones y TI.
+
+### 19/03/2026
+**(Hecho):**
+- Se documenta la Historia de Usuario Operativa HU-002.
+- Se consolida el enfoque funcional orientado al área de Liquidaciones.
+- Se genera el Levantamiento de Requerimientos LR-001.
+- Se documentan requerimientos funcionales, no funcionales, reglas de negocio, interfaces, usuarios, módulos, riesgos y dependencias.
 
 ---
 
-## ⚙️ En Proceso
-
-- Definición de arquitectura técnica
-- Diseño de base de datos
-- Estrategia de procesamiento de archivos (CSV / Excel)
-- Definición de backend (validación, reglas de negocio)
-- Definición de integración con ZAM y Metabase
-
----
-
-## 🛑 Stoppers
-
-- Pendiente validación final con Product Owner
-- Pendiente confirmación de catálogos oficiales (casetas / tarifas)
-- Definición de estructura final de archivos del portal PASE
+## En Proceso
+- Consolidación documental en estructura corporativa del proyecto.
+- Preparación de matriz de trazabilidad HU → RF → módulos → pruebas.
+- Elaboración del análisis técnico inicial.
+- Definición de arquitectura funcional y técnica.
+- Preparación del diseño conceptual de datos.
 
 ---
 
-## 📊 Próximos Pasos
-
-1. Validación de HU con Product Owner
-2. Diseño técnico (arquitectura + BD)
-3. Definición de backlog técnico
-4. Inicio de desarrollo Sprint 1
-5. Preparación de ambiente de pruebas
+## Stoppers
+- Pendiente validación formal final con Product Owner.
+- Pendiente definición y confirmación de catálogos oficiales de casetas y tarifas.
+- Pendiente confirmación de estructura estable de archivos de entrada provenientes del portal PASE.
+- Pendiente definición detallada de autorizaciones operativas aplicables a incidencias.
 
 ---
 
-## 🎯 Riesgo Actual
+## Riesgo Actual
+**Nivel:** Medio
 
-🟠 Medio
-
-- Dependencia de archivos externos (PASE)
-- Posibles cambios en estructura de archivos
-- Definición incompleta de catálogos
+### Riesgos identificados
+- Cambios en el formato del portal
+- Alto volumen de datos
+- Errores en asignación
+- Dependencia de archivos externos
+- Posibles diferencias entre catálogos operativos y tarifas vigentes
 
 ---
 
-## 📈 Nivel de Madurez
+## Dependencias Actuales
+- Archivos descargados del portal PASE
+- Usuarios autorizados
+- Catálogos de casetas y costos
+- Acceso a red corporativa interna
+- Acceso a SCP, ZAM y Metabase
+
+---
+
+## Próximos Pasos
+1. Validación documental final con negocio, operación y PO.
+2. Elaboración de reglas de negocio consolidadas.
+3. Elaboración de criterios de aceptación consolidados.
+4. Construcción de matriz de trazabilidad.
+5. Desarrollo del análisis técnico por HU.
+6. Elaboración de arquitectura de solución.
+7. Preparación del plan de pruebas inicial.
+
+---
+
+## Nivel de Madurez del Proyecto
 
 | Área | Nivel |
-|------|------|
-| Documentación | 🟢 Alto |
-| Requerimientos | 🟢 Alto |
-| Diseño Técnico | 🟡 Medio |
-| Desarrollo | 🔴 No iniciado |
+|------|-------|
+| Definición funcional | Alto |
+| Requerimientos | Alto |
+| Reglas de negocio | Medio |
+| Análisis técnico | Inicial |
+| Diseño de solución | Inicial |
+| Plan de pruebas | Inicial |
+| Desarrollo | No iniciado |
 
 ---
 
-## 🧾 Observaciones
-
-- El proyecto cuenta con una base documental sólida (HU + LR).
-- Se encuentra listo para transición a fase de diseño técnico.
-- Se recomienda iniciar definición de arquitectura lo antes posible.
+## Observaciones
+El proyecto ya cuenta con una base documental sólida para iniciar su transformación a entregables técnicos y de validación. La prioridad inmediata es convertir la definición funcional existente en artefactos de análisis técnico, diseño, trazabilidad y pruebas.
 
 ---
 
-## ✍️ Responsable
-
-Emanuel Simón Zepeda  
+## Responsable
+**Emanuel Simón Zepeda**  
 Desarrollador Analista
-
----
