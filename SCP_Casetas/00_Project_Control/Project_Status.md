@@ -1,71 +1,95 @@
-# Project Status
+# 📊 Project Status — SCP_Casetas
 
-## Proyecto
-SCP_DanosFaltantes_18Puntos
+## 🧠 Proyecto
+Sistema de Validación de Casetas
 
-## Estado General
-🟡 En fase de levantamiento / análisis inicial
-
----
-
-## Situación Actual
-
-Actualmente el proyecto se encuentra en etapa inicial, contando únicamente con:
-
-- Primer acercamiento con área solicitante
-  - Lic. Marcela Ibarra
-  - Santos Bermudez
-
-- Solicitud formal vía correo electrónico
+## 📅 Fecha de inicio
+18/03/2026
 
 ---
 
-## Documentación Disponible
-
-- Correo de solicitud del proyecto
-- Contexto inicial compartido en reunión
+## 🚦 Estado General
+🟡 En Fase de Análisis / Diseño Inicial
 
 ---
 
-## Documentación Pendiente
+## 📌 Avances
 
-- Levantamiento de requerimientos formal
-- Definición de reglas de negocio
-- Criterios de aceptación
-- Historias de usuario (HU)
-- Análisis técnico funcional
-
----
-
-## Próximos Pasos
-
-1. Formalizar levantamiento de requerimientos
-2. Definir alcance funcional
-3. Generar historias de usuario
-4. Validación técnica de historias
-5. Elaboración de análisis técnico
+### 📅 18/03/2026
+- **(Hecho)**: Se realiza levantamiento inicial con área de negocio (HU-001 Negocio).
+- **(Hecho)**: Definición de problemática actual del proceso manual.
+- **(Hecho)**: Identificación de impacto en áreas (Liquidaciones / TI).
 
 ---
 
-## Riesgos Identificados
-
-- Falta de definición clara del requerimiento
-- Posible ambigüedad en el alcance
-- Dependencia de validación del área solicitante
-
----
-
-## Observaciones Técnicas
-
-El proyecto aún no cuenta con información suficiente para iniciar análisis técnico o desarrollo.
-
-Se recomienda no avanzar a etapas técnicas hasta contar con requerimientos formalmente definidos.
+### 📅 19/03/2026
+- **(Hecho)**: Se documenta HU-002 Operativo con enfoque en liquidaciones.
+- **(Hecho)**: Se genera Levantamiento de Requerimientos LR-001.
+- **(Hecho)**: Se define alcance funcional y no funcional del sistema.
+- **(Hecho)**: Identificación de usuarios, módulos y reglas de negocio.
 
 ---
 
-## Responsable Técnico
+## ⚙️ En Proceso
 
-Líder Técnico:
-[Emanuel Simon Zepeda]
+- Definición de arquitectura técnica
+- Diseño de base de datos
+- Estrategia de procesamiento de archivos (CSV / Excel)
+- Definición de backend (validación, reglas de negocio)
+- Definición de integración con ZAM y Metabase
 
-Fecha de actualización: 2026-04-09
+---
+
+## 🛑 Stoppers
+
+- Pendiente validación final con Product Owner
+- Pendiente confirmación de catálogos oficiales (casetas / tarifas)
+- Definición de estructura final de archivos del portal PASE
+
+---
+
+## 📊 Próximos Pasos
+
+1. Validación de HU con Product Owner
+2. Diseño técnico (arquitectura + BD)
+3. Definición de backlog técnico
+4. Inicio de desarrollo Sprint 1
+5. Preparación de ambiente de pruebas
+
+---
+
+## 🎯 Riesgo Actual
+
+🟠 Medio
+
+- Dependencia de archivos externos (PASE)
+- Posibles cambios en estructura de archivos
+- Definición incompleta de catálogos
+
+---
+
+## 📈 Nivel de Madurez
+
+| Área | Nivel |
+|------|------|
+| Documentación | 🟢 Alto |
+| Requerimientos | 🟢 Alto |
+| Diseño Técnico | 🟡 Medio |
+| Desarrollo | 🔴 No iniciado |
+
+---
+
+## 🧾 Observaciones
+
+- El proyecto cuenta con una base documental sólida (HU + LR).
+- Se encuentra listo para transición a fase de diseño técnico.
+- Se recomienda iniciar definición de arquitectura lo antes posible.
+
+---
+
+## ✍️ Responsable
+
+Emanuel Simón Zepeda  
+Desarrollador Analista
+
+---
