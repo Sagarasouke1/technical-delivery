@@ -1,35 +1,44 @@
-# 🚀 SCP_DanosFaltantes_18Puntos  
-**Control de Daños Faltantes – Modelo de 18 Puntos**
+# 🚀 Technical Delivery Repository  
+**Enterprise Project Governance & Delivery Framework**
 
 ---
 
 ## 🧠 Resumen Ejecutivo
 
-Este proyecto tiene como objetivo establecer un control estructurado para la identificación, validación y seguimiento de **daños faltantes bajo un modelo de 18 puntos**, asegurando trazabilidad, control operativo y mejora en la calidad de la información.
+Este repositorio centraliza la gestión, control, documentación y trazabilidad de todos los proyectos tecnológicos del área de TI.
 
-Actualmente se encuentra en fase inicial de levantamiento y análisis.
+Su objetivo es garantizar que cada iniciativa:
 
----
-
-## 📊 Estado del Proyecto
-
-🟡 **En fase de levantamiento / análisis inicial**
-
----
-
-## 📌 Situación Actual
-
-El proyecto cuenta con:
-
-- Primer acercamiento con el área solicitante
-  - Lic. Marcela Ibarra
-  - Santos Bermudez
-- Solicitud formal vía correo electrónico
-- Contexto inicial de negocio identificado
+- Sea estructurada desde su origen
+- Mantenga control documental completo
+- Sea auditable en cualquier momento
+- Cumpla estándares de desarrollo profesional
+- Permita escalabilidad organizacional
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🎯 Objetivo
+
+Establecer un modelo estándar para:
+
+- Gestión de proyectos tecnológicos
+- Control de requerimientos
+- Ejecución técnica
+- Validación de entregables
+- Liberación a producción
+- Cierre formal de proyectos
+
+---
+
+## 🏗️ Estructura del Repositorio
+
+technical-delivery/
+│
+├── SCP_DanosFaltantes_18Puntos/
+│
+└── README.md
+
+## 📂 Estructura Estándar por Proyecto
 
 SCP_DanosFaltantes_18Puntos/
 │
@@ -48,173 +57,140 @@ SCP_DanosFaltantes_18Puntos/
 
 ---
 
-## 📁 Descripción de Carpetas
+## 📁 Proyectos Actuales
 
-### 🔹 00_Project_Control
-- Estado del proyecto
-- Seguimiento de avances
-- Riesgos y control
+### 🔹 SCP_DanosFaltantes_18Puntos
 
----
+Proyecto enfocado en el control de daños faltantes bajo un modelo de validación estructurado.
 
-### 🔹 01_Request_Intake
-- Solicitud inicial
-- Correos
-- Contexto del negocio
+📊 Estado actual:  
+🟡 En fase de levantamiento / análisis inicial
+
+📄 Documento base:  
+`SCP_DanosFaltantes_18Puntos/00_Project_Control/Project_Status.md`
 
 ---
 
-### 🔹 02_Requirements_Validation
-- Levantamiento formal
-- Validación con usuario
-- Reglas de negocio
+## 🧩 Lineamientos Generales
+
+- Todos los proyectos deben respetar la estructura definida
+- No se permite desarrollo sin requerimientos documentados
+- Todo avance debe registrarse en `Project_Status.md`
+- Validación obligatoria con usuario antes de avanzar de fase
+- Cada entregable debe ser trazable
 
 ---
 
-### 🔹 03_User_Stories
-- Historias de usuario (HU)
-- Criterios de aceptación
-- Backlog
+## 📊 Control de Avances (Estándar)
+
+Formato obligatorio:
+
+[FECHA] (Hecho): Descripción del avance
+[FECHA] (En proceso): Actividades en curso
+[FECHA] (Stopper): Bloqueos
+
 
 ---
 
-### 🔹 04_Technical_Analysis
-- Análisis técnico
-- Impacto en sistemas
-- Arquitectura
+## 🔁 Flujo de Trabajo
+
+1. Recepción de solicitud  
+2. Levantamiento de requerimientos  
+3. Validación con usuario  
+4. Generación de HU  
+5. Análisis técnico  
+6. Diseño de solución  
+7. Desarrollo  
+8. Pruebas (QA + UAT)  
+9. Despliegue  
+10. Cierre  
 
 ---
 
-### 🔹 05_Solution_Design
-- Diseño funcional
-- Diseño técnico
-- Diagramas
+## 🔒 Buenas Prácticas
+
+- No subir credenciales al repositorio
+- Uso obligatorio de `.env`
+- Separación de código y configuración
+- Documentación antes de desarrollo
+- Control de versiones en cada entrega
 
 ---
 
-### 🔹 06_Sprint_Execution
-- Planeación de sprints
-- Seguimiento SCRUM
+## 📌 Naming Convention
+
+Formato obligatorio:
+
+[SISTEMA][NOMBRE_PROYECTO][VERSION] 
+
+Ejemplo:
+
+SCP_DanosFaltantes_18Puntos_V1
+
 
 ---
 
-### 🔹 07_Development_Evidence
-- Código
-- Scripts
-- Evidencias técnicas
+## 🛠️ Metodología
 
----
-
-### 🔹 08_Testing_and_Validation
-- QA
-- UAT
-- Evidencias de pruebas
-
----
-
-### 🔹 09_Release_Management
-- Control de versiones
-- Despliegue
-- Bitácora de liberación
-
----
-
-### 🔹 10_Closure
-- Acta de cierre
-- Lecciones aprendidas
-- Firma de conformidad
-
----
-
-## 📄 Estado Detallado
-
-Consulta el archivo:
-
-👉 `00_Project_Control/Project_Status.md`
-
-Documento base del seguimiento del proyecto.
-
----
-
-## 🧾 Hallazgos Clave
-
-- No existe aún definición formal de requerimientos
-- El alcance puede presentar ambigüedad
-- Dependencia directa del área solicitante
-
----
-
-## ⚠️ Riesgos
-
-- Falta de claridad en requerimientos
-- Cambios constantes en alcance
-- Retrasos por validaciones externas
-
----
-
-## 🚧 Documentación Pendiente
-
-- Levantamiento formal de requerimientos
-- Definición de reglas de negocio
-- Historias de usuario (HU)
-- Análisis técnico
-
----
-
-## 🔜 Próximos Pasos
-
-1. Formalizar levantamiento de requerimientos  
-2. Definir alcance funcional  
-3. Generar historias de usuario  
-4. Validación técnica  
-5. Elaboración de análisis técnico  
-
----
-
-## 🧩 Lineamientos
-
-- No iniciar desarrollo sin requerimientos validados
-- Toda la información debe documentarse
-- Validación obligatoria con usuario antes de avanzar
-
----
-
-## 🛠️ Enfoque Metodológico
+Este repositorio opera bajo:
 
 - Scrum Framework
-- SDLC
+- SDLC (Software Development Life Cycle)
 - Control PMO
 
 ---
 
-## 👨‍💻 Responsable Técnico
+## 👨‍💻 Rol del Líder Técnico
+
+Responsable de:
+
+- Validar arquitectura
+- Asegurar calidad del desarrollo
+- Supervisar entregables
+- Garantizar trazabilidad
+- Alinear negocio y tecnología
+
+---
+
+## 🛡️ Auditoría y Control
+
+Este repositorio permite:
+
+- Seguimiento completo del ciclo de vida del proyecto
+- Evidencia documental
+- Validación de entregables
+- Transparencia operativa
+
+---
+
+## 🚀 Nivel del Repositorio
+
+Diseñado para:
+
+- Operación empresarial
+- Auditoría TI
+- Escalabilidad organizacional
+- Integración futura con herramientas como:
+  - GitHub Projects
+  - Jira
+  - Azure DevOps
+  - Metabase
+
+---
+
+## 📬 Contacto
 
 **Emanuel Simón Zepeda**  
 Desarrollador Analista / Líder Técnico  
 
 ---
 
-## 📅 Última Actualización
+## 🔥 Roadmap (Mejora Continua)
 
-2026-04-09
-
----
-
-## 🛡️ Nota Técnica
-
-El proyecto aún no cuenta con información suficiente para iniciar desarrollo o análisis técnico profundo.
-
-Se recomienda mantenerlo en fase de levantamiento hasta contar con:
-
-- Requerimientos claros
-- Validación del negocio
-- Definición de alcance
-
----
-
-## 📎 Referencia
-
-Basado en el documento de estado del proyecto:  
-:contentReference[oaicite:0]{index=0}
+- Dashboard global de proyectos
+- Automatización con GitHub Actions
+- Métricas de avance
+- Plantillas estandarizadas
+- Control de releases por versión
 
 ---
