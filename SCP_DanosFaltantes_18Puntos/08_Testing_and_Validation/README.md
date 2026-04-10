@@ -46,7 +46,7 @@ Casos de prueba.
 ### Evidence/
 Evidencia de pruebas.
 
-### Defects/
+### Hallazgos/
 Registro de errores.
 - Defect_Log.xlsx
 
