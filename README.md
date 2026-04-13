@@ -5,15 +5,15 @@
 
 ## 🧠 Resumen Ejecutivo
 
-Este repositorio centraliza la gestión, control, documentación y trazabilidad de todos los proyectos tecnológicos del área de TI.
+Este repositorio centraliza la **gestión, control, documentación y trazabilidad** de todos los proyectos tecnológicos del área de TI.
 
-Su objetivo es garantizar que cada iniciativa:
+Está diseñado bajo un enfoque **enterprise / auditoría TI**, permitiendo que cada proyecto cumpla con:
 
-- Sea estructurada desde su origen
-- Mantenga control documental completo
-- Sea auditable en cualquier momento
-- Cumpla estándares de desarrollo profesional
-- Permita escalabilidad organizacional
+- Estructura estandarizada desde su origen  
+- Control documental completo  
+- Trazabilidad end-to-end  
+- Cumplimiento de buenas prácticas (Scrum + SDLC + PMO)  
+- Escalabilidad organizacional  
 
 ---
 
@@ -21,12 +21,13 @@ Su objetivo es garantizar que cada iniciativa:
 
 Establecer un modelo estándar para:
 
-- Gestión de proyectos tecnológicos
-- Control de requerimientos
-- Ejecución técnica
-- Validación de entregables
-- Liberación a producción
-- Cierre formal de proyectos
+- Gestión de proyectos tecnológicos  
+- Control de requerimientos (HU / LR / RN)  
+- Análisis técnico y diseño de solución  
+- Ejecución controlada de desarrollo  
+- Validación (QA / UAT)  
+- Liberación a producción  
+- Cierre formal y auditable  
 
 ---
 
@@ -34,13 +35,16 @@ Establecer un modelo estándar para:
 
 technical-delivery/
 │
+├── SCP_Casetas/
 ├── SCP_DanosFaltantes_18Puntos/
 │
 └── README.md
 
+---
+
 ## 📂 Estructura Estándar por Proyecto
 
-SCP_DanosFaltantes_18Puntos/
+[PROJECT_NAME]/
 │
 ├── 00_Project_Control/
 ├── 01_Request_Intake/
@@ -59,40 +63,66 @@ SCP_DanosFaltantes_18Puntos/
 
 ## 📁 Proyectos Actuales
 
-### 🔹 SCP_DanosFaltantes_18Puntos
-
-Proyecto enfocado en el control de daños faltantes bajo un modelo de validación estructurado.
+### 🔹 SCP_Casetas  
+**Sistema de Gestión y Validación de Casetas**
 
 📊 Estado actual:  
-🟡 En fase de levantamiento / análisis inicial
+🟡 En transición de análisis funcional a diseño de solución  
 
 📄 Documento base:  
-`SCP_DanosFaltantes_18Puntos/00_Project_Control/Project_Status.md`
+[SCP_Casetas - Project Status](./SCP_Casetas/00_Project_Control/Project_Status.md)
+
+🧠 Nivel de madurez:
+- Funcional: Alto  
+- Requerimientos: Alto  
+- Técnico: Medio  
+- Diseño: Medio  
+- Desarrollo: No iniciado  
 
 ---
 
-## 🧩 Lineamientos Generales
+### 🔹 SCP_DanosFaltantes_18Puntos  
 
-- Todos los proyectos deben respetar la estructura definida
-- No se permite desarrollo sin requerimientos documentados
-- Todo avance debe registrarse en `Project_Status.md`
-- Validación obligatoria con usuario antes de avanzar de fase
-- Cada entregable debe ser trazable
+📊 Estado actual:  
+🟡 En fase de levantamiento / análisis inicial  
+
+📄 Documento base:  
+[SCP_DanosFaltantes_18Puntos - Project Status](./SCP_DanosFaltantes_18Puntos/00_Project_Control/Project_Status.md)
+
+🧠 Nivel de madurez:
+- Definición: Inicial  
+- Requerimientos: No definidos  
+- Técnico: No iniciado  
+- Desarrollo: No iniciado  
 
 ---
 
-## 📊 Control de Avances (Estándar)
+## 🔗 Trazabilidad del Proyecto
 
-Formato obligatorio:
+Cada proyecto debe garantizar la relación completa entre:
+
+Solicitud → Requerimiento → HU → Desarrollo → Pruebas → Release
+
+Artefactos obligatorios:
+
+- Project_Status.md  
+- Version_Control.md  
+- Matriz de Trazabilidad  
+- Historias de Usuario (HU)  
+- Levantamiento de Requerimientos (LR)  
+
+---
+
+## 📊 Control de Avances (Formato Oficial)
 
 [FECHA] (Hecho): Descripción del avance
 [FECHA] (En proceso): Actividades en curso
-[FECHA] (Stopper): Bloqueos
+[FECHA] (Stopper): Bloqueo
 
 
 ---
 
-## 🔁 Flujo de Trabajo
+## 🔁 Flujo de Trabajo (Scrum + SDLC)
 
 1. Recepción de solicitud  
 2. Levantamiento de requerimientos  
@@ -102,29 +132,43 @@ Formato obligatorio:
 6. Diseño de solución  
 7. Desarrollo  
 8. Pruebas (QA + UAT)  
-9. Despliegue  
+9. Release  
 10. Cierre  
+
+---
+
+## 🧩 Lineamientos Generales
+
+- No se permite desarrollo sin requerimientos documentados  
+- Todo avance debe registrarse en Project_Status.md  
+- Todo cambio debe registrarse en Version_Control.md  
+- Toda HU debe tener criterios de aceptación  
+- Validación obligatoria con negocio antes de avanzar  
+- Todo entregable debe ser trazable  
 
 ---
 
 ## 🔒 Buenas Prácticas
 
-- No subir credenciales al repositorio
-- Uso obligatorio de `.env`
-- Separación de código y configuración
-- Documentación antes de desarrollo
-- Control de versiones en cada entrega
+- Uso obligatorio de archivos `.env`  
+- No subir credenciales al repositorio  
+- Separación de código y configuración  
+- Documentación antes de desarrollo  
+- Versionamiento controlado (Git)  
+- Commits claros y auditables  
+- Evidencia de pruebas obligatoria  
 
 ---
 
 ## 📌 Naming Convention
 
-Formato obligatorio:
+Formato estándar:
 
-[SISTEMA][NOMBRE_PROYECTO][VERSION] 
+[SISTEMA]_[NOMBRE_PROYECTO]_V[VERSION]
 
 Ejemplo:
 
+SCP_Casetas_V1
 SCP_DanosFaltantes_18Puntos_V1
 
 
@@ -134,9 +178,10 @@ SCP_DanosFaltantes_18Puntos_V1
 
 Este repositorio opera bajo:
 
-- Scrum Framework
-- SDLC (Software Development Life Cycle)
-- Control PMO
+- Scrum Framework  
+- SDLC (Software Development Life Cycle)  
+- Gobierno TI (PMO)  
+- Control de cambios (RFC / Version Control)  
 
 ---
 
@@ -144,11 +189,12 @@ Este repositorio opera bajo:
 
 Responsable de:
 
-- Validar arquitectura
-- Asegurar calidad del desarrollo
-- Supervisar entregables
-- Garantizar trazabilidad
-- Alinear negocio y tecnología
+- Validar arquitectura  
+- Asegurar calidad del desarrollo  
+- Supervisar entregables  
+- Garantizar trazabilidad  
+- Alinear negocio y tecnología  
+- Gestionar riesgos técnicos  
 
 ---
 
@@ -156,10 +202,11 @@ Responsable de:
 
 Este repositorio permite:
 
-- Seguimiento completo del ciclo de vida del proyecto
-- Evidencia documental
-- Validación de entregables
-- Transparencia operativa
+- Seguimiento completo del ciclo de vida del proyecto  
+- Evidencia documental centralizada  
+- Validación de entregables  
+- Transparencia operativa  
+- Cumplimiento de estándares TI  
 
 ---
 
@@ -167,14 +214,17 @@ Este repositorio permite:
 
 Diseñado para:
 
-- Operación empresarial
-- Auditoría TI
-- Escalabilidad organizacional
-- Integración futura con herramientas como:
-  - GitHub Projects
-  - Jira
-  - Azure DevOps
-  - Metabase
+- Operación empresarial  
+- Auditoría TI  
+- Escalabilidad organizacional  
+- Gobierno de proyectos tecnológicos  
+
+Preparado para integración con:
+
+- GitHub Projects  
+- Jira  
+- Azure DevOps  
+- Metabase  
 
 ---
 
@@ -187,10 +237,20 @@ Desarrollador Analista / Líder Técnico
 
 ## 🔥 Roadmap (Mejora Continua)
 
-- Dashboard global de proyectos
-- Automatización con GitHub Actions
-- Métricas de avance
-- Plantillas estandarizadas
-- Control de releases por versión
+- Dashboard global de proyectos  
+- Automatización con GitHub Actions  
+- Métricas de avance (KPIs)  
+- Plantillas enterprise estandarizadas  
+- Control de releases por versión  
+- Integración con herramientas de BI  
 
 ---
+
+## 🧠 Nota Final
+
+Este repositorio no es solo almacenamiento de código, es un **modelo de gobierno tecnológico empresarial**, diseñado para:
+
+- Escalar múltiples proyectos  
+- Soportar auditorías internas y externas  
+- Estandarizar la operación TI  
+- Garantizar calidad y control en cada entrega  
