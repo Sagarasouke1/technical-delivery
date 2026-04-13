@@ -1,221 +1,191 @@
-# 🚀 SCP_DanosFaltantes_18Puntos  
-**Control de Daños Faltantes – Modelo de 18 Puntos**
+# 📊 SCP_ReporteComercial_Ventas
+**Reporte Comercialización – Ventas Consolidadas**
 
 ---
 
 ## 🧠 Resumen Ejecutivo
 
-Este proyecto tiene como objetivo establecer un control estructurado para la identificación, validación y seguimiento de **daños faltantes bajo un modelo de 18 puntos**, asegurando trazabilidad, control operativo y mejora en la calidad de la información.
+El proyecto **SCP_ReporteComercial_Ventas** tiene como finalidad diseñar e implementar un reporte consolidado de ventas que permita integrar en un solo punto de consulta la información comercial proveniente de múltiples documentos y fuentes.
 
-Actualmente se encuentra en fase inicial de levantamiento y análisis.
+Actualmente, la información de ventas se encuentra distribuida en distintos reportes y documentos, lo que dificulta el análisis integral del desempeño comercial. Este proyecto busca centralizar dicha información, permitiendo su análisis por operación, cliente y periodo, así como la comparación histórica para la toma de decisiones estratégicas.
 
----
-
-## 📊 Estado del Proyecto
-
-🟡 **En fase de levantamiento / análisis inicial**
+Como parte fundamental del modelo de negocio, la operación **Dedicados** deberá identificarse y visualizarse obligatoriamente bajo la razón social **FLA**.
 
 ---
 
-## 📌 Situación Actual
+## 🎯 Objetivo del Proyecto
 
-El proyecto cuenta con:
+Implementar un reporte de **Ventas Consolidadas** que permita:
 
-- Primer acercamiento con el área solicitante
-  - Lic. Marcela Ibarra
-  - Santos Bermudez
-- Solicitud formal vía correo electrónico
-- Contexto inicial de negocio identificado
+- Centralizar la información de ventas.
+- Filtrar datos por operación, cliente y rango de fechas.
+- Integrar todos los documentos que impactan la venta.
+- Generar comparativos históricos (mensual y anual).
+- Homologar la visualización de la operación **Dedicados** como **FLA**.
+- Proveer información confiable para la toma de decisiones.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🏢 Información General
 
-SCP_DanosFaltantes_18Puntos/
+| Campo | Detalle |
+|------|--------|
+| **Proyecto** | SCP_ReporteComercial_Ventas |
+| **Nombre funcional** | Reporte Comercialización – Ventas Consolidadas |
+| **Empresa** | Auto Express Oriente / Fletes Línea Azul |
+| **Sistema** | Metabase / ZAM |
+| **Área solicitante** | Comercialización |
+| **Tipo de solución** | Reporte analítico / BI |
+| **Metodología** | Scrum |
+| **Código HU base** | HU-001 |
+
+---
+
+## ❗ Problemática de Negocio
+
+La información comercial actual presenta las siguientes problemáticas:
+
+- Se encuentra distribuida en múltiples fuentes.
+- No existe una vista consolidada de ventas.
+- Dificulta el análisis por cliente, operación y periodo.
+- Complica la generación de comparativos históricos.
+- Existe falta de estandarización en la visualización de operaciones.
+- No se tiene homologación clara de la operación **Dedicados (FLA)**.
+
+---
+
+## 👤 Historia de Usuario Principal
+
+**Como** usuario directivo y administrativo del sistema SCP,  
+**quiero** contar con un reporte de Ventas Consolidadas que integre todos los documentos de venta, con filtros y comparativos por periodo, operación y cliente,  
+**para** analizar el desempeño comercial de la empresa y facilitar la toma de decisiones estratégicas con información confiable y segmentada.
+
+---
+
+## 📦 Alcance Funcional
+
+### ✅ Incluye
+
+- Totales de ventas consolidados.
+- Filtros por:
+  - Operación(es)
+  - Rango de fechas (semanal o mensual)
+  - Cliente(s)
+- Inclusión de documentos:
+  - CFDI
+  - Facturas directas
+  - Notas de cargo
+  - Notas de crédito
+  - Cancelaciones
+  - Refacturaciones
+- Comparativos:
+  - Año contra año
+  - Mes contra mes
+- Identificación obligatoria de:
+  - **Dedicados → FLA**
+
+---
+
+### ❌ No Incluye
+
+- Modificación de información contable origen.
+- Reprocesos fiscales.
+- Cambios en la generación de documentos.
+- Alteración de lógica en sistemas fuente.
+
+---
+
+## 🧩 Requerimientos Funcionales
+
+### RF-01 Consolidación de ventas
+El sistema deberá mostrar los totales de ventas en un solo reporte consolidado.
+
+### RF-02 Filtro por operación
+Permitir seleccionar una o múltiples operaciones.
+
+### RF-03 Filtro por fechas
+Permitir consulta por rango de fechas (semanal o mensual).
+
+### RF-04 Filtro por cliente
+Permitir segmentación por uno o varios clientes.
+
+### RF-05 Integración documental
+El reporte deberá considerar:
+- CFDI
+- Facturas
+- Notas de cargo
+- Notas de crédito
+- Cancelaciones
+- Refacturaciones
+
+### RF-06 Comparativos históricos
+Permitir:
+- Comparativo año contra año
+- Comparativo mes contra mes
+
+### RF-07 Homologación Dedicados
+Toda la operación **Dedicados** deberá visualizarse como **FLA**.
+
+### RF-08 Filtros acumulativos
+Los filtros deberán funcionar de manera combinada.
+
+### RF-09 Disponibilidad
+El reporte deberá estar disponible en el sistema definido.
+
+---
+
+## 📌 Reglas de Negocio
+
+### RN-01
+El reporte es únicamente informativo.
+
+### RN-02
+No genera movimientos contables.
+
+### RN-03
+Dedicados siempre debe mostrarse como FLA.
+
+### RN-04
+Los filtros deben ser acumulativos.
+
+### RN-05
+El resultado debe ser validado por el área solicitante.
+
+---
+
+## 🛠️ Enfoque de Implementación
+
+El desarrollo del proyecto se realizará por fases:
+
+1. Consolidación de información de diferentes documentos.
+2. Homologación de criterios de operación.
+3. Desarrollo de filtros combinados.
+4. Construcción de comparativos históricos.
+5. Validación funcional con Comercialización.
+6. Liberación controlada.
+
+---
+
+## 🏗️ Estructura del Proyecto
+
+```bash
+SCP_ReporteComercial_Ventas/
+│
+├── README.md
 │
 ├── 00_Project_Control/
+│   ├── Project_Status.md
+│   ├── Version_Control.md
+│   ├── Traceability_Matrix.md
+│
 ├── 01_Request_Intake/
 ├── 02_Requirements_Validation/
 ├── 03_User_Stories/
-├── 04_Technical_Analysis/
-├── 05_Solution_Design/
-├── 06_Sprint_Execution/
-├── 07_Development_Evidence/
-├── 08_Testing_and_Validation/
-├── 09_Release_Management/
-└── 10_Closure/
+├── 04_Architecture_Design/
+├── 05_Development/
+├── 06_Quality_Assurance/
+├── 07_Deployment_and_Release/
+└── 08_Monitoring_and_Support/
 
 
 ---
-
-## 📁 Descripción de Carpetas
-
-### 🔹 00_Project_Control
-- Estado del proyecto
-- Seguimiento de avances
-- Riesgos y control
-
----
-
-### 🔹 01_Request_Intake
-- Solicitud inicial
-- Correos
-- Contexto del negocio
-
----
-
-### 🔹 02_Requirements_Validation
-- Levantamiento formal
-- Validación con usuario
-- Reglas de negocio
-
----
-
-### 🔹 03_User_Stories
-- Historias de usuario (HU)
-- Criterios de aceptación
-- Backlog
-
----
-
-### 🔹 04_Technical_Analysis
-- Análisis técnico
-- Impacto en sistemas
-- Arquitectura
-
----
-
-### 🔹 05_Solution_Design
-- Diseño funcional
-- Diseño técnico
-- Diagramas
-
----
-
-### 🔹 06_Sprint_Execution
-- Planeación de sprints
-- Seguimiento SCRUM
-
----
-
-### 🔹 07_Development_Evidence
-- Código
-- Scripts
-- Evidencias técnicas
-
----
-
-### 🔹 08_Testing_and_Validation
-- QA
-- UAT
-- Evidencias de pruebas
-
----
-
-### 🔹 09_Release_Management
-- Control de versiones
-- Despliegue
-- Bitácora de liberación
-
----
-
-### 🔹 10_Closure
-- Acta de cierre
-- Lecciones aprendidas
-- Firma de conformidad
-
----
-
-## 📄 Estado Detallado
-
-Consulta el archivo:
-
-👉 `00_Project_Control/Project_Status.md`
-
-Documento base del seguimiento del proyecto.
-
----
-
-## 🧾 Hallazgos Clave
-
-- No existe aún definición formal de requerimientos
-- El alcance puede presentar ambigüedad
-- Dependencia directa del área solicitante
-
----
-
-## ⚠️ Riesgos
-
-- Falta de claridad en requerimientos
-- Cambios constantes en alcance
-- Retrasos por validaciones externas
-
----
-
-## 🚧 Documentación Pendiente
-
-- Levantamiento formal de requerimientos
-- Definición de reglas de negocio
-- Historias de usuario (HU)
-- Análisis técnico
-
----
-
-## 🔜 Próximos Pasos
-
-1. Formalizar levantamiento de requerimientos  
-2. Definir alcance funcional  
-3. Generar historias de usuario  
-4. Validación técnica  
-5. Elaboración de análisis técnico  
-
----
-
-## 🧩 Lineamientos
-
-- No iniciar desarrollo sin requerimientos validados
-- Toda la información debe documentarse
-- Validación obligatoria con usuario antes de avanzar
-
----
-
-## 🛠️ Enfoque Metodológico
-
-- Scrum Framework
-- SDLC
-- Control PMO
-
----
-
-## 👨‍💻 Responsable Técnico
-
-**Emanuel Simón Zepeda**  
-Desarrollador Analista / Líder Técnico  
-
----
-
-## 📅 Última Actualización
-
-2026-04-09
-
----
-
-## 🛡️ Nota Técnica
-
-El proyecto aún no cuenta con información suficiente para iniciar desarrollo o análisis técnico profundo.
-
-Se recomienda mantenerlo en fase de levantamiento hasta contar con:
-
-- Requerimientos claros
-- Validación del negocio
-- Definición de alcance
-
----
-
-## 📎 Referencia
-
-Basado en el documento de estado del proyecto:  
-:contentReference[oaicite:0]{index=0}
-
----
-s
