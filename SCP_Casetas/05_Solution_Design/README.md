@@ -58,3 +58,16 @@ Flujos de proceso.
 
 ## Regla
 El diseño debe basarse en el análisis técnico.
+
+## Contenido obligatorio
+
+- Diagramas de arquitectura
+- Flujos funcionales
+- Modelo de datos
+- Integraciones externas
+
+## Buenas prácticas
+
+- Cada flujo debe mapear a HU
+- Cada diseño debe mapear a BR
+- No duplicar lógica con Technical Analysis

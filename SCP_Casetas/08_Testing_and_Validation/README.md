@@ -56,3 +56,16 @@ Validación final.
 
 ## Regla
 No se permite liberar sin pruebas documentadas.
+
+## Estructura obligatoria
+
+- Test Plan
+- Test Cases
+- Execution
+- Defects
+- Hallazgos
+
+## Regla de auditoría
+
+TODO debe ser trazable a:
+HU → TC → DEFECT → FIX

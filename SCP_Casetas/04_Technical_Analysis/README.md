@@ -59,3 +59,14 @@ Registro de decisiones técnicas.
 
 ## Regla
 No existe desarrollo sin análisis técnico documentado.
+
+## Propósito
+
+Documentar cómo se implementa la lógica definida en HU y BR
+
+## Regla clave
+
+Todo análisis técnico debe estar ligado a:
+- HU
+- LR
+- BR
