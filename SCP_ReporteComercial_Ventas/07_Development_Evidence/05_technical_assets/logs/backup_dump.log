@@ -1,0 +1,30 @@
+2026-03-03 13:12:10,837 | INFO | ===== INICIO RESPALDO =====
+2026-03-03 13:12:10,839 | ERROR | No encontré DB_NAME (o LOCAL_DB_NAME) en el .env.
+Agrega por ejemplo:
+DB_NAME=analytics_aeo_dev
+2026-03-03 13:15:04,401 | INFO | ===== INICIO RESPALDO =====
+2026-03-03 13:15:04,403 | ERROR | No encontré DB_NAME (o LOCAL_DB_NAME) en el .env.
+Agrega por ejemplo:
+DB_NAME=analytics_aeo_dev
+2026-03-03 13:18:33,641 | INFO | ===== INICIO RESPALDO =====
+2026-03-03 13:18:33,679 | INFO | 🟦 Ejecutando respaldo...
+2026-03-03 13:18:33,679 | INFO | Ejecutable: C:\Program Files\MariaDB 10.6\bin\mariadb-dump.exe
+2026-03-03 13:18:33,680 | INFO | Tipo: mariadb
+2026-03-03 13:18:33,680 | INFO | Host: 127.0.0.1:3306
+2026-03-03 13:18:33,680 | INFO | Usuario: root
+2026-03-03 13:18:33,681 | INFO | BD: analytics_aeo
+2026-03-03 13:18:33,681 | INFO | Tablas: tb_mb_conciliacion_fact_vs_conta_2026
+2026-03-03 13:18:33,681 | INFO | Salida: Q:\Backups_scp\tabla_meta_analytics_aeo_20260303_131833.sql
+2026-03-03 13:18:34,077 | INFO | ✅ Respaldo terminado correctamente: Q:\Backups_scp\tabla_meta_analytics_aeo_20260303_131833.sql
+2026-03-03 13:18:34,077 | INFO | ===== FIN RESPALDO OK =====
+2026-03-19 16:33:05,630 | INFO | ===== INICIO RESPALDO =====
+2026-03-19 16:33:05,704 | INFO | 🟦 Ejecutando respaldo...
+2026-03-19 16:33:05,705 | INFO | Ejecutable: C:\Program Files\MariaDB 10.6\bin\mariadb-dump.exe
+2026-03-19 16:33:05,705 | INFO | Tipo: mariadb
+2026-03-19 16:33:05,705 | INFO | Host: 127.0.0.1:3306
+2026-03-19 16:33:05,706 | INFO | Usuario: root
+2026-03-19 16:33:05,706 | INFO | BD: analytics_aeo
+2026-03-19 16:33:05,706 | INFO | Tablas: tb_mb_conciliacion_fact_vs_conta_2026
+2026-03-19 16:33:05,707 | INFO | Salida: Q:\Backups_scp\tabla_meta_analytics_aeo_20260319_163305.sql
+2026-03-19 16:33:06,048 | INFO | ✅ Respaldo terminado correctamente: Q:\Backups_scp\tabla_meta_analytics_aeo_20260319_163305.sql
+2026-03-19 16:33:06,048 | INFO | ===== FIN RESPALDO OK =====

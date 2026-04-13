@@ -1,71 +1,98 @@
-# Project Status
+# Project Status - SCP_ReporteComercial_Ventas
 
-## Proyecto
-SCP_DanosFaltantes_18Puntos
-
-## Estado General
-🟡 En fase de levantamiento / análisis inicial
-
----
-
-## Situación Actual
-
-Actualmente el proyecto se encuentra en etapa inicial, contando únicamente con:
-
-- Primer acercamiento con área solicitante
-  - Lic. Marcela Ibarra
-  - Santos Bermudez
-
-- Solicitud formal vía correo electrónico
+## 1. Información General
+**Proyecto:** SCP_ReporteComercial_Ventas  
+**Componente:** Conciliación Facturación vs Contabilidad  
+**Área solicitante:** Finanzas / Contabilidad  
+**Área técnica:** TI / BI / Data Engineering  
+**Metodología:** Scrum  
+**Estado actual:** En fortalecimiento documental, técnico y de control analítico.
 
 ---
 
-## Documentación Disponible
-
-- Correo de solicitud del proyecto
-- Contexto inicial compartido en reunión
+## 2. Resumen Ejecutivo del Estado
+El proyecto cuenta actualmente con una base técnica funcional para la extracción de información desde ZAM, carga en base analítica, conciliación entre facturación y contabilidad, persistencia para consumo en BI y respaldo de resultados. La solución ya opera a nivel técnico, pero requiere fortalecimiento en documentación oficial, control ETL, staging y madurez del modelo BI.
 
 ---
 
-## Documentación Pendiente
+## 3. Avances Registrados
 
-- Levantamiento de requerimientos formal
-- Definición de reglas de negocio
-- Criterios de aceptación
-- Historias de usuario (HU)
-- Análisis técnico funcional
+### 03/03/2026
+**(Hecho):**
+- Se ejecuta la extracción de facturación hacia `dm_factura_electronica_totales`.
+- Se ejecuta la extracción de contabilidad hacia `cont_polizadet_ingresos_2026`.
+- Se validan cargas exitosas en MySQL.
+- Se generan logs operativos por proceso.
 
----
+**(En proceso):**
+- Formalización documental del modelo técnico y de negocio.
+- Estructuración del proyecto dentro del repositorio técnico.
 
-## Próximos Pasos
+**(Stopper):**
+- Sin bloqueos funcionales críticos en esta fecha.
 
-1. Formalizar levantamiento de requerimientos
-2. Definir alcance funcional
-3. Generar historias de usuario
-4. Validación técnica de historias
-5. Elaboración de análisis técnico
+### 19/03/2026
+**(Hecho):**
+- Se valida el respaldo de la tabla analítica de conciliación.
+- Se conserva evidencia del proceso de backup.
 
----
+**(En proceso):**
+- Consolidación del modelo documental oficial.
+- Fortalecimiento de arquitectura orientada a BI.
 
-## Riesgos Identificados
-
-- Falta de definición clara del requerimiento
-- Posible ambigüedad en el alcance
-- Dependencia de validación del área solicitante
-
----
-
-## Observaciones Técnicas
-
-El proyecto aún no cuenta con información suficiente para iniciar análisis técnico o desarrollo.
-
-Se recomienda no avanzar a etapas técnicas hasta contar con requerimientos formalmente definidos.
+**(Stopper):**
+- Dependencia de correcta configuración del `.env` para procesos de respaldo.
 
 ---
 
-## Responsable Técnico
+## 4. Situación Actual
 
-Líder Técnico:
-[Emanuel Simon Zepeda]
+### Hecho
+- Existe ETL funcional de facturación.
+- Existe ETL funcional de contabilidad.
+- Existe proceso de carga desde Excel.
+- Existe vista de conciliación.
+- Existe tabla persistida para BI.
+- Existen logs operativos.
+- Existe proceso de respaldo.
 
-Fecha de actualización: 2026-04-09
+### En proceso
+- Documentación oficial del proyecto.
+- Diccionario de datos.
+- Matriz fuente a destino.
+- Tablas de control ETL.
+- Inclusión formal de Cliente en modelo BI.
+- Plan de pruebas y liberación.
+
+### Stopper
+- Pendiente confirmar dimensión Cliente en la capa final.
+- Pendiente formalizar control ETL y staging.
+
+---
+
+## 5. Riesgos Actuales
+- Diferencias de fecha entre facturación y contabilidad.
+- Referencias inconsistentes.
+- Reprocesos no controlados de Excel.
+- Dependencia de configuración correcta del `.env`.
+- Falta de trazabilidad estructurada en base de datos para corridas y errores.
+- Falta de capa final BI con todas las dimensiones esperadas.
+
+---
+
+## 6. Próximas Acciones
+1. Generar documentación oficial del proyecto.
+2. Diseñar tablas de control ETL.
+3. Definir staging para Excel.
+4. Validar dimensión Cliente.
+5. Diseñar tabla o vista final para dashboard comercial.
+6. Elaborar plan de pruebas.
+7. Elaborar guía de despliegue.
+
+---
+
+## 7. Estatus General
+**Semáforo:** Amarillo
+
+**Justificación:**  
+La solución ya funciona técnicamente y cuenta con base operativa validada, pero aún requiere fortalecimiento documental, control ETL, gobierno técnico y madurez del modelo de datos para quedar a nivel enterprise.

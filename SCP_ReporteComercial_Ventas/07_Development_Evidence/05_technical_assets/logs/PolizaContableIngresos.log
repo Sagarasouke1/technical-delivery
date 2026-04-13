@@ -1,0 +1,49 @@
+[2026-03-03 11:09:31] ===================================
+[2026-03-03 11:09:31] 🚀 Iniciando proceso (PolizaContableIngresos)
+[2026-03-03 11:09:31] ===================================
+[2026-03-03 11:09:31] 📄 Query origen leído desde: Q:\Python\Python\APIS\ContVSFact\Querys\PolizaContableIngresos.sql
+[2026-03-03 11:09:31] 🔎 Test TCP 192.168.11.253:1433 => OK
+[2026-03-03 11:09:31] 🔌 SQL Server => 192.168.11.253 | DB: aeodb | Driver: ODBC Driver 17 for SQL Server
+[2026-03-03 11:09:31] ✅ Conectado a SQL Server
+[2026-03-03 11:09:31] 🔌 MySQL => 127.0.0.1:3306 | DB: analytics_aeo
+[2026-03-03 11:09:31] ✅ Conectado a MySQL
+[2026-03-03 11:09:31] 📥 Ejecutando query origen (SQL Server) desde archivo...
+[2026-03-03 11:09:31] 🧱 Creando/verificando tabla destino: cont_polizadet_ingresos_2026
+[2026-03-03 11:09:31] 🧩 INSERT/UPSERT dinámico generado.
+[2026-03-03 11:09:31] ✔ BATCH GUARDADO | Registros: 2000 | Total: 2000
+[2026-03-03 11:09:31] ✔ BATCH GUARDADO | Registros: 2000 | Total: 4000
+[2026-03-03 11:09:32] ✔ BATCH GUARDADO | Registros: 2000 | Total: 6000
+[2026-03-03 11:09:32] ✔ BATCH GUARDADO | Registros: 2000 | Total: 8000
+[2026-03-03 11:09:32] ✔ BATCH GUARDADO | Registros: 1208 | Total: 9208
+[2026-03-03 11:09:32] ===================================
+[2026-03-03 11:09:32] RESUMEN FINAL
+[2026-03-03 11:09:32] Total leídos SQL Server: 9208
+[2026-03-03 11:09:32] Total guardados MySQL: 9208
+[2026-03-03 11:09:32] Batches con error MySQL: 0
+[2026-03-03 11:09:32] Tiempo total (seg): 0.82
+[2026-03-03 11:09:32] ===================================
+[2026-04-10 09:38:53] ===================================
+[2026-04-10 09:38:53] 🚀 Iniciando proceso (PolizaContableIngresos)
+[2026-04-10 09:38:53] ===================================
+[2026-04-10 09:38:53] 📄 Query origen leído desde: Q:\Python\Python\APIS\ContVSFact\Querys\PolizaContableIngresos.sql
+[2026-04-10 09:38:53] 🔎 Test TCP 192.168.11.253:1433 => OK
+[2026-04-10 09:38:53] 🔌 SQL Server => 192.168.11.253 | DB: aeodb | Driver: ODBC Driver 17 for SQL Server
+[2026-04-10 09:38:53] ✅ Conectado a SQL Server
+[2026-04-10 09:38:53] 🔌 MySQL => 127.0.0.1:3306 | DB: analytics_aeo
+[2026-04-10 09:38:53] ✅ Conectado a MySQL
+[2026-04-10 09:38:53] 📥 Ejecutando query origen (SQL Server) desde archivo...
+[2026-04-10 09:38:54] 🧱 Creando/verificando tabla destino: cont_polizadet_ingresos_2026
+[2026-04-10 09:38:54] 🧩 INSERT/UPSERT dinámico generado.
+[2026-04-10 09:38:54] ✔ BATCH GUARDADO | Registros: 2000 | Total: 2000
+[2026-04-10 09:38:55] ✔ BATCH GUARDADO | Registros: 2000 | Total: 4000
+[2026-04-10 09:38:55] ✔ BATCH GUARDADO | Registros: 2000 | Total: 6000
+[2026-04-10 09:38:55] ✔ BATCH GUARDADO | Registros: 2000 | Total: 8000
+[2026-04-10 09:38:57] ✔ BATCH GUARDADO | Registros: 2000 | Total: 10000
+[2026-04-10 09:38:57] ✔ BATCH GUARDADO | Registros: 1367 | Total: 11367
+[2026-04-10 09:38:57] ===================================
+[2026-04-10 09:38:57] RESUMEN FINAL
+[2026-04-10 09:38:57] Total leídos SQL Server: 11367
+[2026-04-10 09:38:57] Total guardados MySQL: 11367
+[2026-04-10 09:38:57] Batches con error MySQL: 0
+[2026-04-10 09:38:57] Tiempo total (seg): 3.79
+[2026-04-10 09:38:57] ===================================

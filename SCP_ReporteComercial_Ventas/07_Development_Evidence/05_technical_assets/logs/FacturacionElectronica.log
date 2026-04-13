@@ -1,0 +1,90 @@
+2026-03-03 11:09:37,281 | INFO | LOG_FILE: Q:\Python\Python\APIS\ContVSFact\logs\FacturacionElectronica.log
+2026-03-03 11:09:37,283 | INFO | ENV cargado desde: Q:\Python\Python\APIS\ContVSFact\conexion\.env
+2026-03-03 11:09:37,283 | INFO | Conectando a SQL Server...
+2026-03-03 11:09:37,342 | INFO | Conectando a MySQL...
+2026-03-03 11:09:37,351 | INFO | Leyendo archivo SQL: Q:\Python\Python\APIS\ContVSFact\Querys\FacturacionElectronica.sql
+2026-03-03 11:09:37,351 | INFO | Ejecutando consulta en SQL Server...
+2026-03-03 11:09:37,936 | INFO | Columnas devueltas: ['Referencia', 'tipo_operacion', 'fecha_ingreso', 'Total_Correcto', 'status_factura']
+2026-03-03 11:09:37,936 | INFO | Registros obtenidos de SQL Server: 8400
+2026-03-03 11:09:37,936 | INFO | Creando/verificando tabla MySQL dinámica: dm_factura_electronica_totales
+2026-03-03 11:09:37,958 | INFO | Tabla lista con UNIQUE (UPSERT): Referencia, fecha_ingreso
+2026-03-03 11:09:38,321 | INFO | Insertados/actualizados: 2000
+2026-03-03 11:09:38,879 | INFO | Insertados/actualizados: 4000
+2026-03-03 11:09:39,219 | INFO | Insertados/actualizados: 6000
+2026-03-03 11:09:39,519 | INFO | Insertados/actualizados: 8000
+2026-03-03 11:09:39,582 | INFO | Insertados/actualizados: 8400
+2026-03-03 11:09:39,582 | INFO | Carga finalizada correctamente.
+2026-03-03 11:09:39,582 | INFO | Tiempo total: 0:00:02.299474
+2026-03-03 13:03:50,418 | INFO | LOG_FILE: Q:\Python\Python\APIS\ContVSFact\logs\FacturacionElectronica.log
+2026-03-03 13:03:50,433 | INFO | ENV cargado desde: Q:\Python\Python\APIS\ContVSFact\conexion\.env
+2026-03-03 13:03:50,433 | INFO | Conectando a SQL Server...
+2026-03-03 13:03:50,574 | INFO | Conectando a MySQL...
+2026-03-03 13:03:50,591 | INFO | Leyendo archivo SQL: Q:\Python\Python\APIS\ContVSFact\Querys\FacturacionElectronica.sql
+2026-03-03 13:03:50,591 | INFO | Ejecutando consulta en SQL Server...
+2026-03-03 13:03:51,497 | INFO | Columnas devueltas: ['Referencia', 'tipo_operacion', 'fecha_ingreso', 'Total_Correcto', 'status_factura']
+2026-03-03 13:03:51,497 | INFO | Registros obtenidos de SQL Server: 8695
+2026-03-03 13:03:51,497 | INFO | Creando/verificando tabla MySQL dinámica: dm_factura_electronica_totales
+2026-03-03 13:03:51,678 | INFO | Tabla lista con UNIQUE (UPSERT): Referencia, fecha_ingreso
+2026-03-03 13:03:52,004 | INFO | Insertados/actualizados: 2000
+2026-03-03 13:03:52,497 | INFO | Insertados/actualizados: 4000
+2026-03-03 13:03:53,102 | INFO | Insertados/actualizados: 6000
+2026-03-03 13:03:53,732 | INFO | Insertados/actualizados: 8000
+2026-03-03 13:03:53,958 | INFO | Insertados/actualizados: 8695
+2026-03-03 13:03:53,959 | INFO | Carga finalizada correctamente.
+2026-03-03 13:03:53,959 | INFO | Tiempo total: 0:00:03.526500
+2026-03-19 16:28:57,966 | INFO | LOG_FILE: Q:\Python\Python\APIS\ContVSFact\logs\FacturacionElectronica.log
+2026-03-19 16:28:57,978 | INFO | ENV cargado desde: Q:\Python\Python\APIS\ContVSFact\conexion\.env
+2026-03-19 16:28:57,978 | INFO | Conectando a SQL Server...
+2026-03-19 16:28:58,217 | INFO | Conectando a MySQL...
+2026-03-19 16:28:58,251 | INFO | Leyendo archivo SQL: Q:\Python\Python\APIS\ContVSFact\Querys\FacturacionElectronica.sql
+2026-03-19 16:28:58,252 | INFO | Ejecutando consulta en SQL Server...
+2026-03-19 16:28:59,263 | INFO | Columnas devueltas: ['Referencia', 'tipo_operacion', 'fecha_ingreso', 'Total_Correcto', 'status_factura']
+2026-03-19 16:28:59,263 | INFO | Registros obtenidos de SQL Server: 10992
+2026-03-19 16:28:59,263 | INFO | Creando/verificando tabla MySQL dinámica: dm_factura_electronica_totales
+2026-03-19 16:28:59,397 | INFO | Tabla lista con UNIQUE (UPSERT): Referencia, fecha_ingreso
+2026-03-19 16:28:59,689 | INFO | Insertados/actualizados: 2000
+2026-03-19 16:28:59,973 | INFO | Insertados/actualizados: 4000
+2026-03-19 16:29:00,251 | INFO | Insertados/actualizados: 6000
+2026-03-19 16:29:00,528 | INFO | Insertados/actualizados: 8000
+2026-03-19 16:29:00,879 | INFO | Insertados/actualizados: 10000
+2026-03-19 16:29:01,016 | INFO | Insertados/actualizados: 10992
+2026-03-19 16:29:01,016 | INFO | Carga finalizada correctamente.
+2026-03-19 16:29:01,031 | INFO | Tiempo total: 0:00:03.052730
+2026-04-10 09:40:29,137 | INFO | LOG_FILE: Q:\Python\Python\APIS\ContVSFact\logs\FacturacionElectronica.log
+2026-04-10 09:40:29,149 | INFO | ENV cargado desde: Q:\Python\Python\APIS\ContVSFact\conexion\.env
+2026-04-10 09:40:29,149 | INFO | Conectando a SQL Server...
+2026-04-10 09:40:29,217 | INFO | Conectando a MySQL...
+2026-04-10 09:40:29,226 | INFO | Leyendo archivo SQL: Q:\Python\Python\APIS\ContVSFact\Querys\FacturacionElectronica.sql
+2026-04-10 09:40:29,227 | INFO | Ejecutando consulta en SQL Server...
+2026-04-10 09:40:31,371 | INFO | Columnas devueltas: ['Referencia', 'tipo_operacion', 'fecha_ingreso', 'Total_Correcto', 'status_factura']
+2026-04-10 09:40:31,371 | INFO | Registros obtenidos de SQL Server: 13927
+2026-04-10 09:40:31,372 | INFO | Creando/verificando tabla MySQL dinámica: dm_factura_electronica_totales
+2026-04-10 09:40:31,378 | INFO | Tabla lista con UNIQUE (UPSERT): Referencia, fecha_ingreso
+2026-04-10 09:40:31,657 | INFO | Insertados/actualizados: 2000
+2026-04-10 09:40:32,118 | INFO | Insertados/actualizados: 4000
+2026-04-10 09:40:33,098 | INFO | Insertados/actualizados: 6000
+2026-04-10 09:40:33,525 | INFO | Insertados/actualizados: 8000
+2026-04-10 09:40:33,955 | INFO | Insertados/actualizados: 10000
+2026-04-10 09:40:34,856 | INFO | Insertados/actualizados: 12000
+2026-04-10 09:40:35,167 | INFO | Insertados/actualizados: 13927
+2026-04-10 09:40:35,168 | INFO | Carga finalizada correctamente.
+2026-04-10 09:40:35,169 | INFO | Tiempo total: 0:00:06.019546
+2026-04-10 09:40:44,702 | INFO | LOG_FILE: Q:\Python\Python\APIS\ContVSFact\logs\FacturacionElectronica.log
+2026-04-10 09:40:44,704 | INFO | ENV cargado desde: Q:\Python\Python\APIS\ContVSFact\conexion\.env
+2026-04-10 09:40:44,704 | INFO | Conectando a SQL Server...
+2026-04-10 09:40:44,780 | INFO | Conectando a MySQL...
+2026-04-10 09:40:44,786 | INFO | Leyendo archivo SQL: Q:\Python\Python\APIS\ContVSFact\Querys\FacturacionElectronica.sql
+2026-04-10 09:40:44,786 | INFO | Ejecutando consulta en SQL Server...
+2026-04-10 09:40:47,383 | INFO | Columnas devueltas: ['Referencia', 'tipo_operacion', 'fecha_ingreso', 'Total_Correcto', 'status_factura']
+2026-04-10 09:40:47,383 | INFO | Registros obtenidos de SQL Server: 13927
+2026-04-10 09:40:47,384 | INFO | Creando/verificando tabla MySQL dinámica: dm_factura_electronica_totales
+2026-04-10 09:40:47,384 | INFO | Tabla lista con UNIQUE (UPSERT): Referencia, fecha_ingreso
+2026-04-10 09:40:47,885 | INFO | Insertados/actualizados: 2000
+2026-04-10 09:40:48,340 | INFO | Insertados/actualizados: 4000
+2026-04-10 09:40:49,417 | INFO | Insertados/actualizados: 6000
+2026-04-10 09:40:49,841 | INFO | Insertados/actualizados: 8000
+2026-04-10 09:40:50,113 | INFO | Insertados/actualizados: 10000
+2026-04-10 09:40:50,384 | INFO | Insertados/actualizados: 12000
+2026-04-10 09:40:51,240 | INFO | Insertados/actualizados: 13927
+2026-04-10 09:40:51,241 | INFO | Carga finalizada correctamente.
+2026-04-10 09:40:51,241 | INFO | Tiempo total: 0:00:06.536706

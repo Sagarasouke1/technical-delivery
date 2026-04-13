@@ -1,191 +1,116 @@
-# 📊 SCP_ReporteComercial_Ventas
-**Reporte Comercialización – Ventas Consolidadas**
+# SCP_ReporteComercial_Ventas
+
+![Status](https://img.shields.io/badge/Status-En%20Desarrollo-yellow)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![SQL](https://img.shields.io/badge/SQL-SQL%20Server%20%7C%20MariaDB-orange)
+
+## Resumen Ejecutivo
+Proyecto orientado a la conciliación entre facturación y contabilidad, con el objetivo de comparar de forma estructurada lo vendido/facturado contra lo contabilizado, consolidando la información en una capa analítica para consumo en BI.
+
+## Objetivo
+Desarrollar un proceso de extracción, transformación y carga de información desde ZAM hacia la base de datos analítica, permitiendo comparar importes facturados contra importes contabilizados y publicar el resultado en un dashboard de Metabase con filtros por Operación, Cliente y Rango de Fechas.
+
+## Alcance
+### Alcance actual
+- Revisión por mes completo.
+- Validación de cierre contable vs facturación.
+- Persistencia de resultados para consulta en BI.
+
+### Visión evolutiva
+- Comparación día a día.
+- Trazabilidad operativa continua.
+- Mayor automatización de controles de calidad y monitoreo ETL.
+
+## Arquitectura General
+```text
+Sistema ZAM (SQL Server)
+   ↓
+Procesos ETL (Python + SQL)
+   ├── FacturacionElectronica.py
+   ├── PolizaContableIngresos.py
+   ├── PolizaIngresosExcel.py
+   └── BackupMariadb.py
+   ↓
+Base Analítica (MySQL / MariaDB)
+   ├── dm_factura_electronica_totales
+   ├── cont_polizadet_ingresos_2026
+   ├── cont_polizadet_ingresos_original_2026
+   ├── vw_mb_conciliacion_fact_vs_conta_2026
+   └── tb_mb_conciliacion_fact_vs_conta_2026
+   ↓
+Metabase
+
+## 🚀 Componentes Técnicos
+
+### 5.1 Extracción de Facturación
+* **Script:** `FacturacionElectronica.py`
+* **Query:** `FacturacionElectronica.sql`
+* **Destino:** `dm_factura_electronica_totales`
+
+### 5.2 Extracción de Contabilidad
+* **Script:** `PolizaContableIngresos.py`
+* **Query:** `PolizaContableIngresos.sql`
+* **Destino:** `cont_polizadet_ingresos_2026`
+
+### 5.3 Carga Auxiliar (Excel)
+* **Script:** `PolizaIngresosExcel.py`
+* **Destino:** `cont_polizadet_ingresos_original_2026`
+
+### 5.4 Conciliación y Persistencia
+* **Vista:** `vw_mb_conciliacion_fact_vs_conta_2026`
+* **Tabla Persistida:** `tb_mb_conciliacion_fact_vs_conta_2026`
+
+### 5.5 Respaldo (Backup)
+* **Script:** `BackupMariadb.py`
+* **Objetivo:** Respaldo de la tabla de conciliación principal.
+
+## 🛠 Tecnologías Utilizadas
+
+* **Lenguaje:** Python (Pandas, python-dotenv)
+* **Bases de Datos:** SQL Server, MySQL / MariaDB
+* **Conectores:** `pyodbc`, `pymysql`, `mysql.connector`
+* **Herramientas de Backup:** `mariadb-dump` / `mysqldump`
+* **Visualización:** Metabase
+
+## 📋 Reglas Funcionales Principales
+
+1.  **Comparación Core:** Contraste directo entre el importe facturado y el contabilizado.
+2.  **Frecuencia:** Operativa actual mensual, con hoja de ruta hacia revisión diaria.
+3.  **Dashboard BI:** El reporte final en Metabase debe ofrecer capacidades de filtrado por:
+    * Operación
+    * Cliente
+    * Rango de Fechas
+
+## 📂 Estructura Documental Clave
+
+El proyecto sigue una estructura de gobernanza organizada:
+
+| Categoría | Documento / Ruta |
+| :--- | :--- |
+| **Control** | `00_Project_Control/Project_Status.md` <br> `00_Project_Control/Version_Control.md` |
+| **Reglas** | `02_Requirements_Validation/02_Business_Rules/Business_Rules_SCP.md` |
+| **Diseño** | `05_Solution_Design/01_Architecture/Technical_Architecture.md` <br> `05_Solution_Design/02_Data_Model/Data_Dictionary.md` |
+| **Mapping** | `05_Solution_Design/02_Data_Model/Source_to_Target_Mapping.md` |
+| **SQL/DDL** | `05_Solution_Design/02_Data_Model/DDL_Tablas_Control.sql` |
+| **QA/Despliegue** | `08_Testing_and_Validation/01_Test_Plan/Test_Plan_SCP.md` <br> `09_Release_Management/01_Deployment/Deployment_Guide.md` |
+
+## 📈 Estado Actual
+
+El componente cuenta actualmente con:
+- [x] ETLs funcionales y queries de extracción.
+- [x] Vistas de conciliación y persistencia analítica.
+- [x] Evidencia de ejecución operativa satisfactoria.
+
+*Enfoque actual: Fortalecimiento de documentación, control de procesos ETL y gobierno de datos.*
+
+## 🛣 Próximos Pasos
+
+- [ ] Formalizar la documentación oficial técnica y funcional.
+- [ ] Implementar **Tablas de Control ETL** para auditoría.
+- [ ] Incorporar una capa de **Staging** para la ingesta de archivos Excel.
+- [ ] Validar e integrar la **Dimensión Cliente**.
+- [ ] Diseñar la capa semántica final para el Dashboard Comercial.
+- [ ] Ejecutar el plan de pruebas integrales y despliegue oficial.
 
 ---
-
-## 🧠 Resumen Ejecutivo
-
-El proyecto **SCP_ReporteComercial_Ventas** tiene como finalidad diseñar e implementar un reporte consolidado de ventas que permita integrar en un solo punto de consulta la información comercial proveniente de múltiples documentos y fuentes.
-
-Actualmente, la información de ventas se encuentra distribuida en distintos reportes y documentos, lo que dificulta el análisis integral del desempeño comercial. Este proyecto busca centralizar dicha información, permitiendo su análisis por operación, cliente y periodo, así como la comparación histórica para la toma de decisiones estratégicas.
-
-Como parte fundamental del modelo de negocio, la operación **Dedicados** deberá identificarse y visualizarse obligatoriamente bajo la razón social **FLA**.
-
----
-
-## 🎯 Objetivo del Proyecto
-
-Implementar un reporte de **Ventas Consolidadas** que permita:
-
-- Centralizar la información de ventas.
-- Filtrar datos por operación, cliente y rango de fechas.
-- Integrar todos los documentos que impactan la venta.
-- Generar comparativos históricos (mensual y anual).
-- Homologar la visualización de la operación **Dedicados** como **FLA**.
-- Proveer información confiable para la toma de decisiones.
-
----
-
-## 🏢 Información General
-
-| Campo | Detalle |
-|------|--------|
-| **Proyecto** | SCP_ReporteComercial_Ventas |
-| **Nombre funcional** | Reporte Comercialización – Ventas Consolidadas |
-| **Empresa** | Auto Express Oriente / Fletes Línea Azul |
-| **Sistema** | Metabase / ZAM |
-| **Área solicitante** | Comercialización |
-| **Tipo de solución** | Reporte analítico / BI |
-| **Metodología** | Scrum |
-| **Código HU base** | HU-001 |
-
----
-
-## ❗ Problemática de Negocio
-
-La información comercial actual presenta las siguientes problemáticas:
-
-- Se encuentra distribuida en múltiples fuentes.
-- No existe una vista consolidada de ventas.
-- Dificulta el análisis por cliente, operación y periodo.
-- Complica la generación de comparativos históricos.
-- Existe falta de estandarización en la visualización de operaciones.
-- No se tiene homologación clara de la operación **Dedicados (FLA)**.
-
----
-
-## 👤 Historia de Usuario Principal
-
-**Como** usuario directivo y administrativo del sistema SCP,  
-**quiero** contar con un reporte de Ventas Consolidadas que integre todos los documentos de venta, con filtros y comparativos por periodo, operación y cliente,  
-**para** analizar el desempeño comercial de la empresa y facilitar la toma de decisiones estratégicas con información confiable y segmentada.
-
----
-
-## 📦 Alcance Funcional
-
-### ✅ Incluye
-
-- Totales de ventas consolidados.
-- Filtros por:
-  - Operación(es)
-  - Rango de fechas (semanal o mensual)
-  - Cliente(s)
-- Inclusión de documentos:
-  - CFDI
-  - Facturas directas
-  - Notas de cargo
-  - Notas de crédito
-  - Cancelaciones
-  - Refacturaciones
-- Comparativos:
-  - Año contra año
-  - Mes contra mes
-- Identificación obligatoria de:
-  - **Dedicados → FLA**
-
----
-
-### ❌ No Incluye
-
-- Modificación de información contable origen.
-- Reprocesos fiscales.
-- Cambios en la generación de documentos.
-- Alteración de lógica en sistemas fuente.
-
----
-
-## 🧩 Requerimientos Funcionales
-
-### RF-01 Consolidación de ventas
-El sistema deberá mostrar los totales de ventas en un solo reporte consolidado.
-
-### RF-02 Filtro por operación
-Permitir seleccionar una o múltiples operaciones.
-
-### RF-03 Filtro por fechas
-Permitir consulta por rango de fechas (semanal o mensual).
-
-### RF-04 Filtro por cliente
-Permitir segmentación por uno o varios clientes.
-
-### RF-05 Integración documental
-El reporte deberá considerar:
-- CFDI
-- Facturas
-- Notas de cargo
-- Notas de crédito
-- Cancelaciones
-- Refacturaciones
-
-### RF-06 Comparativos históricos
-Permitir:
-- Comparativo año contra año
-- Comparativo mes contra mes
-
-### RF-07 Homologación Dedicados
-Toda la operación **Dedicados** deberá visualizarse como **FLA**.
-
-### RF-08 Filtros acumulativos
-Los filtros deberán funcionar de manera combinada.
-
-### RF-09 Disponibilidad
-El reporte deberá estar disponible en el sistema definido.
-
----
-
-## 📌 Reglas de Negocio
-
-### RN-01
-El reporte es únicamente informativo.
-
-### RN-02
-No genera movimientos contables.
-
-### RN-03
-Dedicados siempre debe mostrarse como FLA.
-
-### RN-04
-Los filtros deben ser acumulativos.
-
-### RN-05
-El resultado debe ser validado por el área solicitante.
-
----
-
-## 🛠️ Enfoque de Implementación
-
-El desarrollo del proyecto se realizará por fases:
-
-1. Consolidación de información de diferentes documentos.
-2. Homologación de criterios de operación.
-3. Desarrollo de filtros combinados.
-4. Construcción de comparativos históricos.
-5. Validación funcional con Comercialización.
-6. Liberación controlada.
-
----
-
-## 🏗️ Estructura del Proyecto
-
-```bash
-SCP_ReporteComercial_Ventas/
-│
-├── README.md
-│
-├── 00_Project_Control/
-│   ├── Project_Status.md
-│   ├── Version_Control.md
-│   ├── Traceability_Matrix.md
-│
-├── 01_Request_Intake/
-├── 02_Requirements_Validation/
-├── 03_User_Stories/
-├── 04_Architecture_Design/
-├── 05_Development/
-├── 06_Quality_Assurance/
-├── 07_Deployment_and_Release/
-└── 08_Monitoring_and_Support/
-
-
----
+**Desarrollado por el equipo de Datos y BI - 2026**
