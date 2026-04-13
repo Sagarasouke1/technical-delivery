@@ -67,6 +67,10 @@ El proyecto cuenta actualmente con una base técnica funcional para la extracci�
 ### Stopper
 - Pendiente confirmar dimensión Cliente en la capa final.
 - Pendiente formalizar control ETL y staging.
+- El ambiente DEV se encuentra apagado.
+- Se envió solicitud por correo a los Ingenieros Oswaldo y Daniela para el encendido del ambiente DEV el día 13/04/2026 a las 09:54 AM.
+- Al momento de esta documentación no se cuenta con respuesta.
+- Esta dependencia impacta actividades de validación técnica, pruebas de desarrollo y promoción controlada a QA.
 
 ---
 
@@ -77,6 +81,8 @@ El proyecto cuenta actualmente con una base técnica funcional para la extracci�
 - Dependencia de configuración correcta del `.env`.
 - Falta de trazabilidad estructurada en base de datos para corridas y errores.
 - Falta de capa final BI con todas las dimensiones esperadas.
+- Indisponibilidad del ambiente DEV para desarrollo y validación técnica.
+- Dependencia operativa de terceros para encendido o habilitación del ambiente.
 
 ---
 
