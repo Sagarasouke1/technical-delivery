@@ -1,0 +1,86 @@
+1. Acceso al sistema
+
+1.1 Acceder al sistema
+1.2 Ingresar credenciales
+1.3 Validar credenciales
+
+1.4 Si las credenciales NO son válidas:
+
+Terminar proceso
+
+1.5 Si son válidas:
+
+Continuar al siguiente paso
+2. Obtención de datos
+
+2.1 Acceder al módulo de descargas
+2.2 Descargar archivo de casetas
+2.3 Procesar archivo (ordenar por TAG y fecha)
+
+3. Procesamiento de viajes (loop principal)
+
+3.1 Mientras existan viajes (tractos) por procesar:
+
+3.1.1 Identificación del viaje
+Detectar viaje actual
+Detectar Viaje cargado o vacio
+3.1.2 Cálculo de datos
+Contar número de casetas
+Calcular monto total de casetas
+4. Validación de casetas
+
+4.1 Validar número de casetas contra sistema
+
+4.2 Si NO coincide:
+
+Identificar inconsistencia:
+Caseta extra
+Caseta faltante
+Generar aclaración
+Esperar aprobación
+
+4.3 Si la aclaración NO es aprobada:
+
+Terminar proceso
+
+4.4 Si es aprobada:
+
+Continuar con validaciones
+5. Validación de monto
+
+5.1 Validar monto total contra sistema
+
+5.2 Si NO coincide:
+
+Identificar error:
+Cobro duplicado
+Cobro no actualizado
+Generar aclaración
+Esperar aprobación
+
+5.3 Si la aclaración NO es aprobada:
+
+Terminar proceso
+
+5.4 Si es aprobada:
+
+Continuar
+6. Registro de resultado
+
+6.1 Registrar viaje como correcto
+
+7. Iteración
+
+7.1 Verificar si existe otro viaje
+
+7.2 Si SÍ hay otro viaje:
+
+Regresar a paso 3.1
+
+7.3 Si NO hay más viajes:
+
+Continuar
+8. Generación de resultados
+
+8.1 Generar listado de viajes correctos
+8.2 Generar listado de viajes incorrectos con motivo

@@ -7,12 +7,22 @@
 **Áreas impactadas:** Liquidaciones / TI  
 **Product Owner:** Oswaldo Ortiz  
 **Metodología:** Scrum  
-**Estado actual:** En fase de análisis y definición funcional
+**Estado actual:** En fase de transición de análisis funcional a diseño de solución
 
 ---
 
 ## Resumen Ejecutivo del Estado
-El proyecto cuenta con base documental inicial suficiente para avanzar a análisis técnico y diseño de solución. Actualmente ya se dispone de historias de usuario de negocio y operación, así como del levantamiento formal de requerimientos funcionales, no funcionales, interfaces, reglas de negocio, riesgos y dependencias.
+El proyecto ha evolucionado de una fase inicial de levantamiento y definición funcional hacia una fase estructurada de análisis técnico y diseño de solución.
+
+Actualmente se cuenta con una base documental sólida que incluye:
+- Historias de Usuario (Negocio y Operación)
+- Levantamiento de Requerimientos (LR)
+- Reglas de Negocio iniciales
+- Flujo operativo del proceso
+- Diccionario de datos preliminar
+- Evidencia visual de interfaz (SCP WEB)
+
+Adicionalmente, se ha iniciado la generación de artefactos técnicos y de diseño alineados a buenas prácticas de ingeniería, auditoría TI y trazabilidad completa del ciclo de vida.
 
 ---
 
@@ -22,32 +32,80 @@ El proyecto cuenta con base documental inicial suficiente para avanzar a anális
 **(Hecho):**
 - Se documenta la Historia de Usuario de Negocio HU-001.
 - Se define la problemática del proceso actual de validación de casetas.
-- Se documenta la necesidad de automatizar la importación, validación y trazabilidad del proceso.
+- Se establece la necesidad de automatización del proceso (importación, validación y trazabilidad).
 - Se identifican áreas impactadas: Liquidaciones y TI.
+
+---
 
 ### 19/03/2026
 **(Hecho):**
 - Se documenta la Historia de Usuario Operativa HU-002.
 - Se consolida el enfoque funcional orientado al área de Liquidaciones.
-- Se genera el Levantamiento de Requerimientos LR-001.
-- Se documentan requerimientos funcionales, no funcionales, reglas de negocio, interfaces, usuarios, módulos, riesgos y dependencias.
+- Se genera el documento de Levantamiento de Requerimientos LR-001.
+- Se documentan:
+  - Requerimientos funcionales y no funcionales
+  - Reglas de negocio iniciales
+  - Interfaces
+  - Usuarios
+  - Riesgos y dependencias
+
+---
+
+### 10/04/2026
+**(Hecho):**
+- Se estructura el repositorio bajo modelo enterprise orientado a auditoría TI.
+- Se organiza la documentación bajo capas:
+  - Request Intake
+  - Requirements Validation
+  - User Stories
+  - Technical Analysis
+  - Solution Design
+  - Testing & Validation
+- Se integra documentación técnica inicial:
+  - Flujo detallado del proceso de validación de casetas
+  - Arquitectura de solución (SCP + ZAM + Metabase)
+  - Modelo lógico de datos basado en tablas:
+    - tb_r_casetas_checker
+    - tb_r_checker_auth
+- Se documenta algoritmo funcional del proceso de validación:
+  - Identificación de viajes
+  - Validación de casetas
+  - Validación de montos
+  - Clasificación de resultados
+- Se documentan reglas operativas de interfaz:
+  - Confirmación de carga
+  - Selección de tipo de archivo
+  - Aprobación / rechazo de casetas
+  - Clasificación de viajes
+- Se documenta evidencia visual del sistema:
+  - Carga de archivos
+  - Validación
+  - Resultados
+  - Histórico
+  - Actualización de precios
 
 ---
 
 ## En Proceso
-- Consolidación documental en estructura corporativa del proyecto.
-- Preparación de matriz de trazabilidad HU → RF → módulos → pruebas.
-- Elaboración del análisis técnico inicial.
-- Definición de arquitectura funcional y técnica.
-- Preparación del diseño conceptual de datos.
+- Consolidación de reglas de negocio finales (BR).
+- Construcción de matriz de trazabilidad:
+  - HU → RF → BR → TA → SD → TC
+- Formalización del análisis técnico por historia de usuario.
+- Refinamiento del modelo de datos físico.
+- Definición de arquitectura técnica detallada (componentes y flujo de datos).
+- Elaboración del plan de pruebas completo (Test Plan + Test Cases).
+- Integración de evidencias en repositorio para auditoría.
 
 ---
 
 ## Stoppers
-- Pendiente validación formal final con Product Owner.
-- Pendiente definición y confirmación de catálogos oficiales de casetas y tarifas.
-- Pendiente confirmación de estructura estable de archivos de entrada provenientes del portal PASE.
-- Pendiente definición detallada de autorizaciones operativas aplicables a incidencias.
+- Pendiente validación formal final con Product Owner (aprobación funcional).
+- Pendiente definición oficial de catálogos de:
+  - Casetas
+  - Tarifas vigentes
+- Pendiente confirmación de estructura estable de archivos del portal PASE (CSV/PDF).
+- Pendiente definición de reglas operativas completas para autorizaciones (flujo de aprobación/rechazo).
+- Dependencia de validación de negocio para clasificación de viajes (cargado, pagado, vacío).
 
 ---
 
@@ -55,31 +113,36 @@ El proyecto cuenta con base documental inicial suficiente para avanzar a anális
 **Nivel:** Medio
 
 ### Riesgos identificados
-- Cambios en el formato del portal
-- Alto volumen de datos
-- Errores en asignación
-- Dependencia de archivos externos
-- Posibles diferencias entre catálogos operativos y tarifas vigentes
+- Cambios en la estructura del portal PASE.
+- Variabilidad en formato de archivos de entrada.
+- Alto volumen de datos en procesamiento.
+- Dependencia de validación manual en casos excepcionales.
+- Diferencias entre tarifas reales y catálogos internos.
+- Falta de estandarización en criterios operativos de autorización.
 
 ---
 
 ## Dependencias Actuales
-- Archivos descargados del portal PASE
-- Usuarios autorizados
-- Catálogos de casetas y costos
-- Acceso a red corporativa interna
-- Acceso a SCP, ZAM y Metabase
+- Archivos descargados del portal PASE (CSV / PDF).
+- Catálogos de casetas y tarifas actualizados.
+- Usuarios autorizados para validación y aprobación.
+- Infraestructura SCP (WEB).
+- Integración con:
+  - ZAM (operación)
+  - Metabase (analítica)
+- Acceso a red corporativa interna.
 
 ---
 
 ## Próximos Pasos
-1. Validación documental final con negocio, operación y PO.
-2. Elaboración de reglas de negocio consolidadas.
-3. Elaboración de criterios de aceptación consolidados.
-4. Construcción de matriz de trazabilidad.
-5. Desarrollo del análisis técnico por HU.
-6. Elaboración de arquitectura de solución.
-7. Preparación del plan de pruebas inicial.
+1. Validación documental final con negocio, operación y Product Owner.
+2. Cierre de reglas de negocio (BR consolidadas).
+3. Construcción de matriz de trazabilidad completa.
+4. Finalización del análisis técnico por HU.
+5. Definición final de arquitectura de solución.
+6. Refinamiento del modelo de datos físico.
+7. Elaboración del plan de pruebas completo.
+8. Preparación para inicio de Sprint de desarrollo.
 
 ---
 
@@ -89,19 +152,28 @@ El proyecto cuenta con base documental inicial suficiente para avanzar a anális
 |------|-------|
 | Definición funcional | Alto |
 | Requerimientos | Alto |
-| Reglas de negocio | Medio |
-| Análisis técnico | Inicial |
-| Diseño de solución | Inicial |
+| Reglas de negocio | Medio-Alto |
+| Análisis técnico | Medio |
+| Diseño de solución | Medio |
+| Modelo de datos | Medio |
 | Plan de pruebas | Inicial |
 | Desarrollo | No iniciado |
 
 ---
 
 ## Observaciones
-El proyecto ya cuenta con una base documental sólida para iniciar su transformación a entregables técnicos y de validación. La prioridad inmediata es convertir la definición funcional existente en artefactos de análisis técnico, diseño, trazabilidad y pruebas.
+El proyecto presenta un nivel de madurez adecuado para iniciar la fase de diseño técnico detallado y planificación de desarrollo.
+
+La estructura documental implementada permite:
+- Trazabilidad completa
+- Control de cambios
+- Soporte a auditoría TI
+- Escalabilidad del proyecto
+
+La prioridad actual es cerrar validaciones con negocio y consolidar artefactos técnicos antes de iniciar desarrollo.
 
 ---
 
 ## Responsable
 **Emanuel Simón Zepeda**  
-Desarrollador Analista
+Desarrollador Analista / Líder Técnico
