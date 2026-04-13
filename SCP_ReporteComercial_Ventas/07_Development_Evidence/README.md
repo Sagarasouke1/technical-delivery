@@ -1,46 +1,77 @@
-# Development Evidence
+# Development Evidence - SCP_ReporteComercial_Ventas
 
-## Objetivo
-Respaldar técnicamente lo que se desarrolló.
+## 1. Objetivo
+Esta carpeta concentra las evidencias técnicas y operativas generadas durante el desarrollo, validación, ejecución y soporte del proyecto SCP_ReporteComercial_Ventas.
 
-## Contenido
+---
 
-- Evidencia técnica
-- Logs de ejecución
-- Control de versiones
+## 2. Propósito
+Las evidencias aquí almacenadas permiten:
 
-## Documentos esperados
+- demostrar ejecución de procesos
+- respaldar validaciones técnicas
+- soportar revisiones de auditoría
+- facilitar troubleshooting
+- mantener trazabilidad de evolución técnica
 
-- Technical_Evidence_Register.md
-- Version_Control_Register.md
-- Carpeta de logs
+---
 
-## Buenas Prácticas
+## 3. Subcarpetas y Contenido Esperado
 
-- Guardar evidencia real, no simulada
-- Mantener logs claros
-- Relacionar evidencia con historias
+### `01_Evidence`
+Aquí deben almacenarse:
+- capturas de consultas
+- capturas de tablas
+- capturas de dashboard
+- capturas de errores relevantes
+- capturas de validaciones por ambiente
 
-## Regla Clave
+### `02_Logs`
+Aquí deben almacenarse:
+- logs de facturación
+- logs de contabilidad
+- logs de respaldo
+- logs de otros procesos relevantes
 
-Si no hay evidencia, no existe el desarrollo
+### `03_Versions`
+Aquí deben almacenarse:
+- evidencia de cambios técnicos relevantes
+- validaciones por versión
+- entregables asociados a cada versión
 
-# Development Evidence
+### `04_Git_Records`
+Aquí deben almacenarse:
+- historial relevante de commits
+- estrategia de branching
+- evidencia de cambios estructurales en repositorio
 
-## Objetivo
-Respaldar técnicamente lo desarrollado.
+---
 
-## Subcarpetas
+## 4. Evidencias Recomendadas para este Proyecto
+- `FacturacionElectronica.log`
+- `PolizaContableIngresos.log`
+- `backup_dump.log`
+- capturas de `dm_factura_electronica_totales`
+- capturas de `cont_polizadet_ingresos_2026`
+- capturas de `tb_mb_conciliacion_fact_vs_conta_2026`
+- capturas del dashboard en Metabase
+- evidencia del bloqueo del ambiente DEV si aplica
 
-### Evidence/
-Evidencia funcional y técnica.
+---
 
-### Logs/
-Logs de ejecución.
+## 5. Reglas de Evidencia
+1. Toda evidencia debe ser clara y trazable.
+2. Toda evidencia relevante debe tener fecha o contexto identificable.
+3. Las evidencias críticas no deben depender únicamente del recuerdo operativo.
+4. Los logs sensibles deben revisarse antes de compartirse fuera del equipo técnico.
+5. No deben incluirse credenciales ni secretos.
 
-### Versions/
-Control de versiones.
-- Version_Control_Register.md
+---
 
-## Regla
-Si no hay evidencia, el desarrollo no es válido.
+## 6. Observaciones
+Esta carpeta es clave para:
+- auditoría
+- soporte
+- seguimiento de errores
+- validación de avances
+- cierre formal del proyecto
