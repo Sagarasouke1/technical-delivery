@@ -39,7 +39,7 @@ Base Analítica (MySQL / MariaDB)
    └── tb_mb_conciliacion_fact_vs_conta_2026
    ↓
 Metabase
-
+```
 ## 🚀 Componentes Técnicos
 
 ### 5.1 Extracción de Facturación
